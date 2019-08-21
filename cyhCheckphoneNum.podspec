@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
-    spec.library   = "checkphoneNum/Cyhlib.a"
+    spec.library   = "checkphoneNum/*"
   # spec.libraries = "iconv", "xml2"
 
 
