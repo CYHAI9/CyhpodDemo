@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "checkphoneNum/CyhLib/*.{h,m}"
+  spec.source_files  = "checkphoneNum/**/*"
 #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
-    spec.library   = "checkphoneNum/*"
+# spec.library   = "checkphoneNum/*"
   # spec.libraries = "iconv", "xml2"
 
 
