@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "cyhCheckphoneNum"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "iOS to use for checkphoneNum"
 
   # This description is used to generate tags and improve search results.
@@ -91,6 +91,7 @@ Pod::Spec.new do |spec|
   #
 
 spec.source_files  = "checkphoneNum/**/*.{h,m}"
+spec.vendored_libraries = "checkphoneNum/libCyhLib.a"
 #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -105,7 +106,7 @@ spec.source_files  = "checkphoneNum/**/*.{h,m}"
   #
 
   # spec.resource  = "icon.png"
-   spec.resources = "checkphoneNum/*.a"
+#spec.resources = "checkphoneNum/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -119,7 +120,7 @@ spec.source_files  = "checkphoneNum/**/*.{h,m}"
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
-# spec.library   = "checkphoneNum/*"
+#spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
 
@@ -129,7 +130,7 @@ spec.source_files  = "checkphoneNum/**/*.{h,m}"
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
