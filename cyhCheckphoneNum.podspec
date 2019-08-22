@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "cyhCheckphoneNum"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "iOS to use for checkphoneNum"
 
   # This description is used to generate tags and improve search results.
@@ -93,6 +93,7 @@ Pod::Spec.new do |spec|
 spec.source_files  = "checkphoneNum/**/*.{h,m}"
 #添加自己或其他第三方静态库，注意静态库名称以lib为前缀
 spec.vendored_libraries = "checkphoneNum/libCyhLib.a"
+spec.vendored_frameworks = "checkphoneNum/FrameworkDemo.framework"
 #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
