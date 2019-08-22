@@ -91,6 +91,7 @@ Pod::Spec.new do |spec|
   #
 
 spec.source_files  = "checkphoneNum/**/*.{h,m}"
+#添加自己或其他第三方静态库，注意静态库名称以lib为前缀
 spec.vendored_libraries = "checkphoneNum/libCyhLib.a"
 #spec.exclude_files = "Classes/Exclude"
 
@@ -134,5 +135,8 @@ spec.vendored_libraries = "checkphoneNum/libCyhLib.a"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+#spec.ios.library = 'c++', 'z'
+#spec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+
 
 end
